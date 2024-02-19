@@ -36,7 +36,7 @@ const Products = () => {
                             <Card.Body>
                                 <Card.Title>{product.title}</Card.Title>
                                 {/* <Card.Text>{product.description}</Card.Text> */}
-                                <Card.Title>$ {product.price}</Card.Title>
+                                {/* <Card.Title>$ {product.price}</Card.Title> */}
                                 {/* <Button variant="primary" onClick={() => addToCart(product)}>Add to Cart</Button> */}
                            
                             
