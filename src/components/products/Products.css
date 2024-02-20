@@ -1,0 +1,9 @@
+
+.rowBox{
+    /* border: 1px solid red; */
+    padding: 30px;
+}
+.cardBox{
+    box-shadow: 0 0 5px 1px #67946995!important;
+    padding-top: 20px;
+}

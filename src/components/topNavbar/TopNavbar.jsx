@@ -9,7 +9,9 @@ import {useSelector} from 'react-redux';
 const TopNavbar = () => {
 
     const cartProducts = useSelector(state => state.cart)
-
+    // const quantity = useSelector(state => state.cart.quantity)
+// console.log(cartProducts);
+// console.log(quantity);
   return (
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -27,7 +29,7 @@ const TopNavbar = () => {
     <Navbar.Toggle/>
     <Navbar.Collapse className='justify-content-end'>
       <Navbar.Text>
-      <Nav.Link to= "/cart" as={Link}>Items {cartProducts.length}</Nav.Link>
+      <Nav.Link to= "/cart" as={Link}>Cart {cartProducts.length}</Nav.Link>
       </Navbar.Text>
     </Navbar.Collapse>
 

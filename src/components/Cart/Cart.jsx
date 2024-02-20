@@ -1,10 +1,11 @@
 import React from 'react'
 import TopNavbar from '../topNavbar/TopNavbar'
 import { useDispatch, useSelector } from 'react-redux'
-import { Card } from 'react-bootstrap'
-import { Button } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
+// import { Button } from 'react-bootstrap'
 import { remove } from '../../store/cartSlice'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Cart.css'
 
 const Cart = () => {
 
@@ -21,6 +22,7 @@ const Cart = () => {
             <TopNavbar />
             <h1 className='text-center'>here is your cart</h1>
 
+            <div className="container">
             <div className="row">
 
                 {cartProducts && cartProducts.map((cartProduct) => (
@@ -31,12 +33,14 @@ const Cart = () => {
                                 <Card.Title>{cartProduct.title}</Card.Title>
                                 {/* <Card.Text>{product.description}</Card.Text> */}
                                 <Card.Title>$ {cartProduct.price}</Card.Title>
-                                <Button variant="primary" onClick={() => removeFromCart(cartProduct.id)} >Remove from Cart</Button>
+                                <Button className='removeBtn' variant="primary" onClick={() => removeFromCart(cartProduct.id)}>Remove from Cart</Button>
+                           
                             </Card.Body>
                         </Card>
                     </div>
 
                 ))}
+            </div>
             </div>
 
         </div>
