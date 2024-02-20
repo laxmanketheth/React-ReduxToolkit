@@ -24,7 +24,6 @@ const Cart = () => {
 
             <div className="container">
             <div className="row">
-
                 {cartProducts && cartProducts.map((cartProduct) => (
                     <div className="col-md-3 text-center mb-4">
                         <Card className='h-100' style={{ width: '18rem', alignItems: 'center' }}>
